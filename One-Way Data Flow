@@ -15,7 +15,7 @@ function Display(props){
 
 function App(){
   const [counter, setCounter] = useState(42);
-  const incrementCounter= (incrementValue) => setCounter(counter+incrementValue);
+  const incrementCounter= (incrementValue) => setCounter(counter+incrementValue); // passing values and behaviour
   return(
   <div>
     <Button onClickFunction={incrementCounter} increment={1}/>
@@ -25,7 +25,7 @@ function App(){
     <Display message={counter}/>
   </div>    
       );
-}
+}// To display more than one components or fucntions in a single component
 
 ReactDOM.render(
    <App />, 
